@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Best Finds by Love · Shop my finds</title>
+<meta name="description" content="Everyday things that make life with a little one easier, plus a few treats for us moms. Shop the finds from @bestfindsbylove.">
+</head>
+<body>
+<style>html,body{margin:0}img{max-width:100%}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: one narrow centered column, like a gift tag — mark, name, shop buttons, then a shelf of this week's finds grouped by who they're for. Single brand look on purpose. */
+:root{
+  --blush:#F6E4DD; --cream:#FBF6F0; --wine:#6E2433; --wine-deep:#561B28;
+  --coral:#E0645A; --muted:#7B5A5F; --line:#E8CFC6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:light;
+}
+html,body{min-height:100%}
+body{margin:0;background:var(--blush);color:var(--wine);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-inline:16px;padding-block:48px 40px;display:flex;justify-content:center}
+.wrap{width:100%;max-width:440px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center}
+.mark{width:112px;height:112px;border-radius:50%;background:var(--wine);display:grid;place-items:center;
+  box-shadow:0 0 0 6px var(--cream),0 0 0 7px var(--line)}
+.mark svg{width:84px;height:84px;display:block}
+.id{display:flex;flex-direction:column;gap:6px}
+h1{margin:0;font-family:var(--display);font-style:italic;font-weight:600;font-size:34px;line-height:1.1;letter-spacing:-.5px;text-wrap:balance}
+.handle{font-size:14px;color:var(--muted);letter-spacing:.02em}
+.tag{margin:4px 0 0;font-family:var(--display);font-weight:500;font-size:18px;color:var(--wine)}
+.tag span{color:var(--coral)}
+.links{width:100%;display:flex;flex-direction:column;gap:14px}
+.btn{display:flex;align-items:center;gap:16px;text-align:left;text-decoration:none;min-height:76px;box-sizing:border-box;
+  padding:14px 18px;border-radius:18px;background:var(--cream);color:var(--wine);border:1.5px solid var(--line);
+  transition:transform .15s ease,border-color .15s ease,background .15s ease}
+.btn:hover{border-color:var(--wine);transform:translateY(-2px)}
+.btn:focus-visible,.item:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.btn.primary{background:var(--wine);color:var(--cream);border-color:var(--wine)}
+.btn.primary:hover{background:var(--wine-deep);border-color:var(--wine-deep)}
+.ico{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--blush);color:var(--wine)}
+.primary .ico{background:rgba(251,246,240,.14);color:var(--cream)}
+.ico svg{width:24px;height:24px}
+.txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.txt b{font-weight:700;font-size:17px}
+.txt small{font-size:14px;opacity:.85}
+.arrow{flex:none;width:20px;height:20px;opacity:.7}
+
+/* This week's finds */
+.finds{width:100%;display:flex;flex-direction:column;gap:22px;text-align:left}
+.finds-head{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.finds-head h2{margin:0;font-family:var(--display);font-weight:500;font-size:24px;line-height:1.2}
+.finds-head p{margin:0;font-size:14px;color:var(--muted)}
+.shelf{display:flex;flex-direction:column;gap:8px}
+.shelf h3{margin:0 0 2px 4px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral)}
+.list{background:var(--cream);border:1.5px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.item{display:flex;align-items:center;gap:12px;padding:14px 16px;text-decoration:none;color:var(--wine);transition:background .15s ease}
+.item + .item{border-top:1px solid var(--line)}
+.item:hover{background:var(--blush)}
+.item .txt b{font-size:16px;line-height:1.3}
+.item .txt small{font-size:13.5px;color:var(--muted);opacity:1}
+.shop{flex:none;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--wine);color:var(--cream);white-space:nowrap}
+.item:hover .shop{background:var(--wine-deep)}
+
+.fine{font-size:12.5px;color:var(--muted);max-width:34ch;line-height:1.45}
+.fine a{color:var(--wine)}
+@media (prefers-reduced-motion:reduce){.btn,.item{transition:none}.btn:hover{transform:none}}
+</style>
+
+<main class="wrap">
+  <div class="mark" aria-hidden="true">
+    <svg viewBox="0 0 100 100"><path d="M50 88 C20 66 6 48 6 32 C6 18 17 8 30 8 C39 8 46 13 50 20 C54 13 61 8 70 8 C83 8 94 18 94 32 C94 48 80 66 50 88 Z" fill="#F6E4DD"/><text x="50" y="58" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="600" font-size="34" fill="#6E2433">bf</text></svg>
+  </div>
+
+  <div class="id">
+    <h1>Best Finds by Love</h1>
+    <div class="handle">@bestfindsbylove</div>
+    <p class="tag">Tried it. Loved it. <span>Sharing it.</span></p>
+  </div>
+
+  <nav class="links" aria-label="Shops">
+    <a class="btn" id="etsy" href="https://www.etsy.com/shop/bestfindsbylove" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10 5.5 4h13L20 10"/><path d="M4 10a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0"/><path d="M5.5 12.5V20h13v-7.5"/><path d="M10 20v-4h4v4"/></svg></span>
+      <span class="txt"><b>Etsy Shop</b><small>Handpicked &amp; handmade goodies</small></span>
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+    <a class="btn" id="instagram" href="https://www.instagram.com/bestfindsbylove" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
+      <span class="txt"><b>Instagram</b><small>@bestfindsbylove</small></span>
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+  </nav>
+
+  <section class="finds" aria-labelledby="finds-title">
+    <div class="finds-head">
+      <h2 id="finds-title">Shop the finds from my posts</h2>
+      <p>Saw it on Instagram or Pinterest? Tap to go straight to it on Amazon.</p>
+    </div>
+
+    <div class="shelf">
+      <h3>Toddler &amp; baby</h3>
+      <div class="list">
+        <a class="item" href="https://www.amazon.com/dp/B08QVG9759?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Hatch Rest 2nd Gen</b><small>Sound machine, night light &amp; ok-to-wake clock</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0CX4RLCXW?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>MAGNA-TILES microMAGS 26-Piece</b><small>Tiny magnetic building cubes, ages 3+</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0FJ313VDR?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Toniebox 2 Starter Set</b><small>Screen-free audio player for stories &amp; songs</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0CGDLDK1B?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>PandaEar Suction Plates, 3-Pack</b><small>Divided silicone plates that stay on the tray</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0DKHCWJ5G?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Momcozy Portable Milk Warmer</b><small>Warm bottles on the go, no microwave</small></span><span class="shop">Shop</span></a>
+      </div>
+    </div>
+
+    <div class="shelf">
+      <h3>Mom self-care</h3>
+      <div class="list">
+        <a class="item" href="https://www.amazon.com/dp/B0FJJSVVGV?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>OSEA Bodycare Bestsellers Set</b><small>Body oil, butter, scrub &amp; wash</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B09RKNJWCR?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>grace &amp; stella Under Eye Patches</b><small>Gold, pink &amp; blue gel patches</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0DSGJCS47?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Shark CryoGlow LED Face Mask</b><small>Red light therapy with under-eye cooling</small></span><span class="shop">Shop</span></a>
+      </div>
+    </div>
+
+    <div class="shelf">
+      <h3>Kitchen</h3>
+      <div class="list">
+        <a class="item" href="https://www.amazon.com/dp/B09QV24FFZ?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Ninja CREAMi 7-in-1</b><small>Turns frozen fruit into ice cream</small></span><span class="shop">Shop</span></a>
+      </div>
+    </div>
+
+    <div class="shelf">
+      <h3>Halloween Boo basket</h3>
+      <div class="list">
+        <a class="item" href="https://www.amazon.com/dp/B00N1QPNMA?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>PartySticks Glow Sticks, 100-Pack</b><small>Bracelets &amp; necklaces for trick-or-treat night</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/0803738412?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Room on the Broom (Board Book)</b><small>Our favorite Halloween bedtime story</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0DB3PPTXL?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Light-Up Pumpkin Candy Bucket</b><small>LED jack-o-lantern with glow-in-the-dark handles</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0HLJY96YP?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Little Boos (my book!)</b><small>Halloween coloring &amp; journal book, ages 4–8</small></span><span class="shop">Shop</span></a>
+      </div>
+    </div>
+
+    <div class="shelf">
+      <h3>Diwali</h3>
+      <div class="list">
+        <a class="item" href="https://www.amazon.com/dp/B0FHDC761H?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Flameless LED Diyas, 12-Pack</b><small>Water-sensor lights, safe with little ones</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0DJPTNKW3?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Rangoli Color Kit with Stencils</b><small>Squeeze bottles, refills, roller &amp; stencils</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0DZCP5WC7?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Marigold Garlands, 5-Pack</b><small>Reusable toran for the door &amp; mandir</small></span><span class="shop">Shop</span></a>
+      </div>
+    </div>
+
+    <div class="shelf">
+      <h3>Christmas gifts &amp; stocking stuffers</h3>
+      <div class="list">
+        <a class="item" href="https://www.amazon.com/dp/B0B88Q7ZDN?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Burt's Bees Jingle Balms Set</b><small>4 beeswax lip balms, gift-ready</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0DVCJ8NLX?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Squishmallows Mystery Minis, 5-Pack</b><small>Squishy 5-inch plush friends</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0CNV9CQK8?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Kindle Kids</b><small>Ad-free books and a kid-proof cover</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0DQVKSHGN?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Dyson Airwrap i.d. Multi-Styler</b><small>Dries, curls &amp; smooths in one tool</small></span><span class="shop">Shop</span></a>
+      </div>
+    </div>
+
+    <div class="shelf">
+      <h3>New Year</h3>
+      <div class="list">
+        <a class="item" href="https://www.amazon.com/dp/B0FY27Y79D?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>New Year's Eve 2027 Party Kit</b><small>Hats, glasses, tiaras &amp; noisemakers</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B079GXFR7S?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Clever Fox Undated Planner</b><small>Weekly &amp; monthly goals, start anytime</small></span><span class="shop">Shop</span></a>
+        <a class="item" href="https://www.amazon.com/dp/B0BD78MYPN?tag=bestfinds039c-20" target="_blank" rel="noopener sponsored">
+          <span class="txt"><b>Stanley Quencher 40 oz</b><small>The easiest drink-more-water resolution</small></span><span class="shop">Shop</span></a>
+      </div>
+    </div>
+  </section>
+
+  <p class="fine">As an Amazon Associate I earn from qualifying purchases. Some links may earn me a small commission at no extra cost to you. Prices and availability are set by Amazon and can change. &copy; 2026 Best Finds by Love</p>
+</main>
+
+</body>
+</html>
